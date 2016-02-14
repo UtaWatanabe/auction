@@ -1,0 +1,23 @@
+<%= form_for @item do |f| %>
+
+    <p>
+        商品名：<%=  f.text_field :name %>
+    </p>
+    <p>
+        商品詳細：<%= f.text_area :description %>
+    </p>
+    <p>
+        価格：<%= f.number_field :price %>
+    </p>
+    <p>
+        売主ＩＤ：<%= f.number_field :seller_id %>
+    </p>
+    <p>
+        電子メール：<%= f.email_field :email %>
+    </p>
+    <p>
+        商品画像ＵＲＬ：<%= f.text_field :image_url %>
+    </p>
+
+<%= f.submit "登録" %>
+<% end %>
