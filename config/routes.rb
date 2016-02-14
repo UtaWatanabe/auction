@@ -7,6 +7,11 @@ get 'items/:id/edit' => 'items#edit'
 get '/items' => 'items#index'
 post '/items' => 'items#create'
 
+# 上記は'resources :items'一発で生成されるｗ
+
+root 'items#index'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
