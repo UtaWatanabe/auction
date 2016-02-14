@@ -26,6 +26,14 @@ def update
     redirect_to @item
 end
 
+def destroy
+    @item = Item.find(params[:id])
+    @item.destroy
+    # viewを持たないので消去の挙動は確認できない｡ページそのものが消去されているので､redirectが必要
+    redirect_to items_url
+
+end
+
   private
   def item_params
     params.require(:item).permit(

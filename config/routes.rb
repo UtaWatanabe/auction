@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 get '/items/new' => 'items#new'
 get '/items/:id' => 'items#show' ,as: :item
 patch '/items/:id' => 'items#update'
+delete '/items/:id' => 'items#destroy'
 get 'items/:id/edit' => 'items#edit'
 get '/items' => 'items#index'
 post '/items' => 'items#create'

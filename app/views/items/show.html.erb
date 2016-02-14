@@ -13,3 +13,5 @@
 <p>
   <b>電子メール：<%= @item.email %></b>
 </p>
+<%= link_to'削除', item_path(@item), method: :delete %>
+<!-- item_pathはURLを生成するためのメソッド｡このページはブロック変数の指定が無いので､@itemで指定｡ -->
