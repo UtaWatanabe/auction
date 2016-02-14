@@ -1,0 +1,9 @@
+<h1>出品物一覧</h1>
+
+<ul>
+  <% @item.each do |item| %>
+    <li>
+      <%= link_to item.name,  item_path(item) %>
+    </li>
+  <% end -%>
+</ul>
