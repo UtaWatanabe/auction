@@ -14,6 +14,14 @@
   <b>電子メール：<%= @item.email %></b>
 </p>
 
+<!-- 商品画像を呼び出し､よりdbっぽい仕様にしていく(蔵書管理システムの復習) -->
+
+<p>
+  <b>商品画像：<%= @item.image %></b>
+</p>
+
+<!-- image の設定はしていないと思うので､まずはこれをmodelなりControllerなりに追加していく   -->
+
 <%= link_to'削除', item_path(@item), method: :delete %>
 <%= link_to'一覧に戻る', '/items' %>
 
